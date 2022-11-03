@@ -17,6 +17,31 @@
 		337783D92913F87000CE620C /* GIFRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783C52913F87000CE620C /* GIFRepository.swift */; };
 		337783DA2913F87000CE620C /* QueryHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783C62913F87000CE620C /* QueryHistoryRepository.swift */; };
 		337783DB2913F87000CE620C /* FavoriteGIFRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783C72913F87000CE620C /* FavoriteGIFRepository.swift */; };
+		337784082913F99B00CE620C /* DefaultFavoriteGIFRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783E12913F99B00CE620C /* DefaultFavoriteGIFRepository.swift */; };
+		337784092913F99B00CE620C /* DefaultQueryHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783E22913F99B00CE620C /* DefaultQueryHistoryRepository.swift */; };
+		3377840A2913F99B00CE620C /* DefaultGIFRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783E32913F99B00CE620C /* DefaultGIFRepository.swift */; };
+		3377840B2913F99B00CE620C /* GIFSearchResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783E62913F99B00CE620C /* GIFSearchResponseDTO+Mapping.swift */; };
+		3377840C2913F99B00CE620C /* GIFSearchResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783E72913F99B00CE620C /* GIFSearchResponseDTO.swift */; };
+		3377840D2913F99B00CE620C /* GIFSearchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783E92913F99B00CE620C /* GIFSearchEndpoint.swift */; };
+		3377840E2913F99B00CE620C /* GiphyAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783EB2913F99B00CE620C /* GiphyAPIEndpoint.swift */; };
+		3377840F2913F99B00CE620C /* DefaultNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783ED2913F99B00CE620C /* DefaultNetworkProvider.swift */; };
+		337784102913F99B00CE620C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783EE2913F99B00CE620C /* HTTPMethod.swift */; };
+		337784112913F99B00CE620C /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783EF2913F99B00CE620C /* NetworkProvider.swift */; };
+		337784122913F99B00CE620C /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783F02913F99B00CE620C /* Cancellable.swift */; };
+		337784132913F99B00CE620C /* DefaultNetworkProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783F12913F99B00CE620C /* DefaultNetworkProvider+Rx.swift */; };
+		337784142913F99B00CE620C /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783F22913F99B00CE620C /* APIEndpoint.swift */; };
+		337784152913F99B00CE620C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783F32913F99B00CE620C /* NetworkError.swift */; };
+		337784162913F99B00CE620C /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783F62913F99B00CE620C /* CoreDataError.swift */; };
+		337784182913F99B00CE620C /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783F92913F99B00CE620C /* CoreDataProvider.swift */; };
+		337784192913F99B00CE620C /* CoreDataFavoriteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783FB2913F99B00CE620C /* CoreDataFavoriteStorage.swift */; };
+		3377841A2913F99B00CE620C /* FavoriteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783FC2913F99B00CE620C /* FavoriteStorage.swift */; };
+		3377841B2913F99B00CE620C /* Favorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783FE2913F99B00CE620C /* Favorite+CoreDataProperties.swift */; };
+		3377841C2913F99B00CE620C /* Favorite+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337783FF2913F99B00CE620C /* Favorite+CoreDataClass.swift */; };
+		3377841D2913F99B00CE620C /* Query+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337784022913F99B00CE620C /* Query+CoreDataProperties.swift */; };
+		3377841E2913F99B00CE620C /* Query+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337784032913F99B00CE620C /* Query+CoreDataClass.swift */; };
+		337784202913F99B00CE620C /* CoreDataQueryHistoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337784062913F99B00CE620C /* CoreDataQueryHistoryStorage.swift */; };
+		337784212913F99B00CE620C /* QueryHistoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337784072913F99B00CE620C /* QueryHistoryStorage.swift */; };
+		337784272913FBC800CE620C /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 337784252913FBC800CE620C /* CoreDataModel.xcdatamodeld */; };
 		3393373028CB5D7E0075A692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393372F28CB5D7E0075A692 /* AppDelegate.swift */; };
 		3393373228CB5D7E0075A692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393373128CB5D7E0075A692 /* SceneDelegate.swift */; };
 		3393373428CB5D7E0075A692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393373328CB5D7E0075A692 /* ViewController.swift */; };
@@ -35,6 +60,31 @@
 		337783C52913F87000CE620C /* GIFRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFRepository.swift; sourceTree = "<group>"; };
 		337783C62913F87000CE620C /* QueryHistoryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryHistoryRepository.swift; sourceTree = "<group>"; };
 		337783C72913F87000CE620C /* FavoriteGIFRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteGIFRepository.swift; sourceTree = "<group>"; };
+		337783E12913F99B00CE620C /* DefaultFavoriteGIFRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultFavoriteGIFRepository.swift; sourceTree = "<group>"; };
+		337783E22913F99B00CE620C /* DefaultQueryHistoryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultQueryHistoryRepository.swift; sourceTree = "<group>"; };
+		337783E32913F99B00CE620C /* DefaultGIFRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultGIFRepository.swift; sourceTree = "<group>"; };
+		337783E62913F99B00CE620C /* GIFSearchResponseDTO+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GIFSearchResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		337783E72913F99B00CE620C /* GIFSearchResponseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFSearchResponseDTO.swift; sourceTree = "<group>"; };
+		337783E92913F99B00CE620C /* GIFSearchEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFSearchEndpoint.swift; sourceTree = "<group>"; };
+		337783EB2913F99B00CE620C /* GiphyAPIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPIEndpoint.swift; sourceTree = "<group>"; };
+		337783ED2913F99B00CE620C /* DefaultNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNetworkProvider.swift; sourceTree = "<group>"; };
+		337783EE2913F99B00CE620C /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		337783EF2913F99B00CE620C /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		337783F02913F99B00CE620C /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		337783F12913F99B00CE620C /* DefaultNetworkProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DefaultNetworkProvider+Rx.swift"; sourceTree = "<group>"; };
+		337783F22913F99B00CE620C /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		337783F32913F99B00CE620C /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		337783F62913F99B00CE620C /* CoreDataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
+		337783F92913F99B00CE620C /* CoreDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		337783FB2913F99B00CE620C /* CoreDataFavoriteStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataFavoriteStorage.swift; sourceTree = "<group>"; };
+		337783FC2913F99B00CE620C /* FavoriteStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteStorage.swift; sourceTree = "<group>"; };
+		337783FE2913F99B00CE620C /* Favorite+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		337783FF2913F99B00CE620C /* Favorite+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataClass.swift"; sourceTree = "<group>"; };
+		337784022913F99B00CE620C /* Query+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		337784032913F99B00CE620C /* Query+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+CoreDataClass.swift"; sourceTree = "<group>"; };
+		337784062913F99B00CE620C /* CoreDataQueryHistoryStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataQueryHistoryStorage.swift; sourceTree = "<group>"; };
+		337784072913F99B00CE620C /* QueryHistoryStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryHistoryStorage.swift; sourceTree = "<group>"; };
+		337784262913FBC800CE620C /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		3393372C28CB5D7E0075A692 /* Giphy_Search_ReactorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giphy_Search_ReactorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3393372F28CB5D7E0075A692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3393373128CB5D7E0075A692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +148,134 @@
 			path = RepositoryInterface;
 			sourceTree = "<group>";
 		};
+		337783DF2913F97D00CE620C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				337783E02913F99B00CE620C /* Repository */,
+				337783E42913F99B00CE620C /* Network */,
+				337783F42913F99B00CE620C /* Persistence */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		337783E02913F99B00CE620C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				337783E12913F99B00CE620C /* DefaultFavoriteGIFRepository.swift */,
+				337783E22913F99B00CE620C /* DefaultQueryHistoryRepository.swift */,
+				337783E32913F99B00CE620C /* DefaultGIFRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		337783E42913F99B00CE620C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				337783E52913F99B00CE620C /* Response */,
+				337783E82913F99B00CE620C /* Endpoint */,
+				337783EC2913F99B00CE620C /* Infrastructure */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		337783E52913F99B00CE620C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				337783E62913F99B00CE620C /* GIFSearchResponseDTO+Mapping.swift */,
+				337783E72913F99B00CE620C /* GIFSearchResponseDTO.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		337783E82913F99B00CE620C /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				337783E92913F99B00CE620C /* GIFSearchEndpoint.swift */,
+				337783EA2913F99B00CE620C /* Protocol */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		337783EA2913F99B00CE620C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				337783EB2913F99B00CE620C /* GiphyAPIEndpoint.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		337783EC2913F99B00CE620C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				337783ED2913F99B00CE620C /* DefaultNetworkProvider.swift */,
+				337783EE2913F99B00CE620C /* HTTPMethod.swift */,
+				337783EF2913F99B00CE620C /* NetworkProvider.swift */,
+				337783F02913F99B00CE620C /* Cancellable.swift */,
+				337783F12913F99B00CE620C /* DefaultNetworkProvider+Rx.swift */,
+				337783F22913F99B00CE620C /* APIEndpoint.swift */,
+				337783F32913F99B00CE620C /* NetworkError.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		337783F42913F99B00CE620C /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				337783F52913F99B00CE620C /* Infrastructure */,
+				337783FA2913F99B00CE620C /* FavoriteStroage */,
+				337784002913F99B00CE620C /* QueryHistoryStorage */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		337783F52913F99B00CE620C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				337784252913FBC800CE620C /* CoreDataModel.xcdatamodeld */,
+				337783F62913F99B00CE620C /* CoreDataError.swift */,
+				337783F92913F99B00CE620C /* CoreDataProvider.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		337783FA2913F99B00CE620C /* FavoriteStroage */ = {
+			isa = PBXGroup;
+			children = (
+				337783FB2913F99B00CE620C /* CoreDataFavoriteStorage.swift */,
+				337783FC2913F99B00CE620C /* FavoriteStorage.swift */,
+				337783FD2913F99B00CE620C /* Entity */,
+			);
+			path = FavoriteStroage;
+			sourceTree = "<group>";
+		};
+		337783FD2913F99B00CE620C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				337783FE2913F99B00CE620C /* Favorite+CoreDataProperties.swift */,
+				337783FF2913F99B00CE620C /* Favorite+CoreDataClass.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		337784002913F99B00CE620C /* QueryHistoryStorage */ = {
+			isa = PBXGroup;
+			children = (
+				337784012913F99B00CE620C /* Entity */,
+				337784062913F99B00CE620C /* CoreDataQueryHistoryStorage.swift */,
+				337784072913F99B00CE620C /* QueryHistoryStorage.swift */,
+			);
+			path = QueryHistoryStorage;
+			sourceTree = "<group>";
+		};
+		337784012913F99B00CE620C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				337784022913F99B00CE620C /* Query+CoreDataProperties.swift */,
+				337784032913F99B00CE620C /* Query+CoreDataClass.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		3393372328CB5D7E0075A692 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +300,7 @@
 				3393374D28CB68610075A692 /* Domain */,
 				3393372F28CB5D7E0075A692 /* AppDelegate.swift */,
 				3393373128CB5D7E0075A692 /* SceneDelegate.swift */,
+				337783DF2913F97D00CE620C /* Data */,
 				3393373328CB5D7E0075A692 /* ViewController.swift */,
 				3393373828CB5D7F0075A692 /* Assets.xcassets */,
 				3393373D28CB5D7F0075A692 /* Info.plist */,
@@ -260,19 +439,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				337784272913FBC800CE620C /* CoreDataModel.xcdatamodeld in Sources */,
+				3377841D2913F99B00CE620C /* Query+CoreDataProperties.swift in Sources */,
+				337784132913F99B00CE620C /* DefaultNetworkProvider+Rx.swift in Sources */,
+				3377840A2913F99B00CE620C /* DefaultGIFRepository.swift in Sources */,
 				337783D92913F87000CE620C /* GIFRepository.swift in Sources */,
 				3393373428CB5D7E0075A692 /* ViewController.swift in Sources */,
+				3377841A2913F99B00CE620C /* FavoriteStorage.swift in Sources */,
+				3377840F2913F99B00CE620C /* DefaultNetworkProvider.swift in Sources */,
+				337784192913F99B00CE620C /* CoreDataFavoriteStorage.swift in Sources */,
+				337784142913F99B00CE620C /* APIEndpoint.swift in Sources */,
+				337784152913F99B00CE620C /* NetworkError.swift in Sources */,
+				337784112913F99B00CE620C /* NetworkProvider.swift in Sources */,
 				3393373028CB5D7E0075A692 /* AppDelegate.swift in Sources */,
+				337784202913F99B00CE620C /* CoreDataQueryHistoryStorage.swift in Sources */,
 				337783D02913F87000CE620C /* GIFSearchUseCase.swift in Sources */,
+				3377840C2913F99B00CE620C /* GIFSearchResponseDTO.swift in Sources */,
 				337783CF2913F87000CE620C /* QueryHistoryUseCase.swift in Sources */,
 				3393373228CB5D7E0075A692 /* SceneDelegate.swift in Sources */,
+				337784092913F99B00CE620C /* DefaultQueryHistoryRepository.swift in Sources */,
 				337783D42913F87000CE620C /* GIFType.swift in Sources */,
 				337783DB2913F87000CE620C /* FavoriteGIFRepository.swift in Sources */,
 				337783D32913F87000CE620C /* User.swift in Sources */,
 				337783CE2913F87000CE620C /* FavoriteGIFUseCase.swift in Sources */,
+				337784102913F99B00CE620C /* HTTPMethod.swift in Sources */,
+				3377840E2913F99B00CE620C /* GiphyAPIEndpoint.swift in Sources */,
+				3377841B2913F99B00CE620C /* Favorite+CoreDataProperties.swift in Sources */,
+				337784082913F99B00CE620C /* DefaultFavoriteGIFRepository.swift in Sources */,
+				337784212913F99B00CE620C /* QueryHistoryStorage.swift in Sources */,
+				337784122913F99B00CE620C /* Cancellable.swift in Sources */,
+				3377840B2913F99B00CE620C /* GIFSearchResponseDTO+Mapping.swift in Sources */,
 				337783D52913F87000CE620C /* GIFBundle.swift in Sources */,
 				337783D22913F87000CE620C /* GIF.swift in Sources */,
+				3377841E2913F99B00CE620C /* Query+CoreDataClass.swift in Sources */,
+				3377841C2913F99B00CE620C /* Favorite+CoreDataClass.swift in Sources */,
 				337783DA2913F87000CE620C /* QueryHistoryRepository.swift in Sources */,
+				3377840D2913F99B00CE620C /* GIFSearchEndpoint.swift in Sources */,
+				337784162913F99B00CE620C /* CoreDataError.swift in Sources */,
+				337784182913F99B00CE620C /* CoreDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +677,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		337784252913FBC800CE620C /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				337784262913FBC800CE620C /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 337784262913FBC800CE620C /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3393372428CB5D7E0075A692 /* Project object */;
 }
