@@ -42,6 +42,11 @@
 		337784202913F99B00CE620C /* CoreDataQueryHistoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337784062913F99B00CE620C /* CoreDataQueryHistoryStorage.swift */; };
 		337784212913F99B00CE620C /* QueryHistoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337784072913F99B00CE620C /* QueryHistoryStorage.swift */; };
 		337784272913FBC800CE620C /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 337784252913FBC800CE620C /* CoreDataModel.xcdatamodeld */; };
+		3377842C29154F3300CE620C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377842B29154F3300CE620C /* SearchViewController.swift */; };
+		3377842E29188AD800CE620C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377842D29188AD800CE620C /* Coordinator.swift */; };
+		3377843029188DF900CE620C /* SearchReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377842F29188DF900CE620C /* SearchReactor.swift */; };
+		3377843429188ECA00CE620C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377843229188ECA00CE620C /* PlayerView.swift */; };
+		3377843529188ECA00CE620C /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377843329188ECA00CE620C /* TitleHeaderView.swift */; };
 		3393373028CB5D7E0075A692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393372F28CB5D7E0075A692 /* AppDelegate.swift */; };
 		3393373228CB5D7E0075A692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393373128CB5D7E0075A692 /* SceneDelegate.swift */; };
 		3393373428CB5D7E0075A692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393373328CB5D7E0075A692 /* ViewController.swift */; };
@@ -85,6 +90,11 @@
 		337784062913F99B00CE620C /* CoreDataQueryHistoryStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataQueryHistoryStorage.swift; sourceTree = "<group>"; };
 		337784072913F99B00CE620C /* QueryHistoryStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryHistoryStorage.swift; sourceTree = "<group>"; };
 		337784262913FBC800CE620C /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		3377842B29154F3300CE620C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3377842D29188AD800CE620C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3377842F29188DF900CE620C /* SearchReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReactor.swift; sourceTree = "<group>"; };
+		3377843229188ECA00CE620C /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		3377843329188ECA00CE620C /* TitleHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
 		3393372C28CB5D7E0075A692 /* Giphy_Search_ReactorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giphy_Search_ReactorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3393372F28CB5D7E0075A692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3393373128CB5D7E0075A692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -276,6 +286,42 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		337784282914F6F500CE620C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3377842929154E1A00CE620C /* Common */,
+				3377842A29154E1F00CE620C /* Search */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3377842929154E1A00CE620C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3377842D29188AD800CE620C /* Coordinator.swift */,
+				3377843129188ECA00CE620C /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3377842A29154E1F00CE620C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3377842B29154F3300CE620C /* SearchViewController.swift */,
+				3377842F29188DF900CE620C /* SearchReactor.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3377843129188ECA00CE620C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3377843229188ECA00CE620C /* PlayerView.swift */,
+				3377843329188ECA00CE620C /* TitleHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3393372328CB5D7E0075A692 = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +343,7 @@
 		3393372E28CB5D7E0075A692 /* Giphy_Search_ReactorKit */ = {
 			isa = PBXGroup;
 			children = (
+				337784282914F6F500CE620C /* Scene */,
 				3393374D28CB68610075A692 /* Domain */,
 				3393372F28CB5D7E0075A692 /* AppDelegate.swift */,
 				3393373128CB5D7E0075A692 /* SceneDelegate.swift */,
@@ -448,8 +495,10 @@
 				3377841A2913F99B00CE620C /* FavoriteStorage.swift in Sources */,
 				3377840F2913F99B00CE620C /* DefaultNetworkProvider.swift in Sources */,
 				337784192913F99B00CE620C /* CoreDataFavoriteStorage.swift in Sources */,
+				3377843429188ECA00CE620C /* PlayerView.swift in Sources */,
 				337784142913F99B00CE620C /* APIEndpoint.swift in Sources */,
 				337784152913F99B00CE620C /* NetworkError.swift in Sources */,
+				3377843529188ECA00CE620C /* TitleHeaderView.swift in Sources */,
 				337784112913F99B00CE620C /* NetworkProvider.swift in Sources */,
 				3393373028CB5D7E0075A692 /* AppDelegate.swift in Sources */,
 				337784202913F99B00CE620C /* CoreDataQueryHistoryStorage.swift in Sources */,
@@ -457,9 +506,11 @@
 				3377840C2913F99B00CE620C /* GIFSearchResponseDTO.swift in Sources */,
 				337783CF2913F87000CE620C /* QueryHistoryUseCase.swift in Sources */,
 				3393373228CB5D7E0075A692 /* SceneDelegate.swift in Sources */,
+				3377843029188DF900CE620C /* SearchReactor.swift in Sources */,
 				337784092913F99B00CE620C /* DefaultQueryHistoryRepository.swift in Sources */,
 				337783D42913F87000CE620C /* GIFType.swift in Sources */,
 				337783DB2913F87000CE620C /* FavoriteGIFRepository.swift in Sources */,
+				3377842C29154F3300CE620C /* SearchViewController.swift in Sources */,
 				337783D32913F87000CE620C /* User.swift in Sources */,
 				337783CE2913F87000CE620C /* FavoriteGIFUseCase.swift in Sources */,
 				337784102913F99B00CE620C /* HTTPMethod.swift in Sources */,
@@ -470,6 +521,7 @@
 				337784122913F99B00CE620C /* Cancellable.swift in Sources */,
 				3377840B2913F99B00CE620C /* GIFSearchResponseDTO+Mapping.swift in Sources */,
 				337783D52913F87000CE620C /* GIFBundle.swift in Sources */,
+				3377842E29188AD800CE620C /* Coordinator.swift in Sources */,
 				337783D22913F87000CE620C /* GIF.swift in Sources */,
 				3377841E2913F99B00CE620C /* Query+CoreDataClass.swift in Sources */,
 				3377841C2913F99B00CE620C /* Favorite+CoreDataClass.swift in Sources */,
