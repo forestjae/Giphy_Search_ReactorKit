@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
+
+    private let disposebag = DisposeBag()
 
     func scene(
         _ scene: UIScene,
@@ -23,8 +26,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
-        let vc = ViewController()
-        window.rootViewController = vc
-        window.makeKeyAndVisible()
+        let appCoordinator = AppCoordinator(window: window)
+        appCoordinator.start()
+            .subscribe()
+            .disposed(by: self.disposebag)
     }
 }
