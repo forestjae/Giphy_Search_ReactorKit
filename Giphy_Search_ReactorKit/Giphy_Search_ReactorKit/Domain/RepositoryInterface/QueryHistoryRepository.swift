@@ -11,7 +11,7 @@ import RxSwift
 protocol QueryHistoryRepository {
     func fetchQueryHistory() -> Single<[String]>
 
-    func saveQuery(of query: String, createdAt date: Date) -> Completable
+    func saveQuery(of query: String, createdAt date: Date) -> Single<String>
 
-    func removeQuery(of query: String) -> Completable
+    func removeQuery(of query: String) -> Single<String>
 }

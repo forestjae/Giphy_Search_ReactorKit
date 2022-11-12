@@ -19,11 +19,13 @@ class DefaultQueryHistoryRepository: QueryHistoryRepository {
         return self.queryHistoryStorage.fetchQuery()
     }
 
-    func saveQuery(of query: String, createdAt date: Date) -> Completable {
+    func saveQuery(of query: String, createdAt date: Date) -> Single<String> {
         return self.queryHistoryStorage.saveQuery(of: query, createdAt: date)
     }
 
-    func removeQuery(of query: String) -> Completable {
+    func removeQuery(of query: String) -> Single<String> {
         return self.queryHistoryStorage.removeQuery(of: query)
     }
 }
+
+

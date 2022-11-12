@@ -11,9 +11,9 @@ import RxSwift
 protocol QueryHistoryUseCase {
     func fetchQueryHistory() -> Single<[String]>
 
-    func saveQuery(of query: String) -> Completable
+    func saveQuery(of query: String) -> Single<String>
 
-    func removeQuery(of query: String) -> Completable
+    func removeQuery(of query: String) -> Single<String>
 }
 
 class DefaultQueryHistoryUseCase: QueryHistoryUseCase {
@@ -27,11 +27,11 @@ class DefaultQueryHistoryUseCase: QueryHistoryUseCase {
         return self.queryHistoryRepository.fetchQueryHistory()
     }
 
-    func saveQuery(of query: String) -> Completable {
+    func saveQuery(of query: String) -> Single<String> {
         return self.queryHistoryRepository.saveQuery(of: query, createdAt: Date())
     }
 
-    func removeQuery(of query: String) -> Completable {
+    func removeQuery(of query: String) -> Single<String> {
         return self.queryHistoryRepository.removeQuery(of: query)
     }
 }

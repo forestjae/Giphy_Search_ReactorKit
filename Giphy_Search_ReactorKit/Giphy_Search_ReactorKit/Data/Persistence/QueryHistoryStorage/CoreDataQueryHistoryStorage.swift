@@ -33,10 +33,10 @@ class CoreDataQueryHistoryStorage: QueryHistoryStorage {
         }
     }
 
-    func saveQuery(of query: String, createdAt: Date = Date()) -> Completable {
+    func saveQuery(of query: String, createdAt: Date = Date()) -> Single<String> {
         let predicate = NSPredicate(format: "query == %@", query)
 
-        return Completable.create { completable in
+        return Single.create { single in
             do {
                 let objects = try self.coreDataProvider.fetch(
                     request: Query.fetchRequest(),
@@ -54,19 +54,19 @@ class CoreDataQueryHistoryStorage: QueryHistoryStorage {
                         values: ["query" : query, "createdAt": createdAt]
                     )
                 }
-                completable(.completed)
+                single(.success(query))
             } catch let error {
-                completable(.error(error))
+                single(.failure(error))
             }
 
             return Disposables.create()
         }
     }
 
-    func removeQuery(of query: String) -> Completable {
+    func removeQuery(of query: String) -> Single<String> {
         let predicate = NSPredicate(format: "query == %@", query)
 
-        return Completable.create { completable in
+        return Single.create { single in
             do {
                 let objects = try self.coreDataProvider.fetch(
                     request: Query.fetchRequest(),
@@ -75,9 +75,9 @@ class CoreDataQueryHistoryStorage: QueryHistoryStorage {
                 try objects.forEach {
                     try self.coreDataProvider.delete(object: $0)
                 }
-                completable(.completed)
+                single(.success(query))
             } catch let error {
-                completable(.error(error))
+                single(.failure(error))
             }
             return Disposables.create()
         }
